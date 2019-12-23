@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__wrap {
+    background: grey;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+.checkbox__for-text,
+.radios__for-textpos,
+.dropdown {
+    display: flex;
+    background-color: white;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+
+.container {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    height: 35px;
+    width: 35px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkmark:not(:first-child) {
+    margin-right: 5px;
+}
+
+.container:hover input~.checkmark {
+    background-color: rgba(206, 213, 219, 0.418);
+    transform: scale(1.2);
+}
+
+.container input:checked~.checkmark {
+    background-color: rgba(149, 149, 149, 0.411);
+}
+
+.btn {
+    border: none;
+    background: white;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.btn:hover {
+    background-color: rgba(206, 213, 219, 0.418);
+    transform: scale(1.2);
+}
+
+
+/*  */
+
+.hidden {
+    display: none;
+}
+
+.show {
+    visibility: unset;
+}
+
+
+/*  */
+
+.fonts,
+.sizes {
+    width: 150px;
+    border: 2px solid rgba(206, 213, 219, 0.418);
+    padding: 10px;
+    background: white;
+    position: absolute;
+    z-index: 100;
+    top: 73px;
+    border-radius: 10px;
+}
+
+.font__item,
+.font_size-item {
+    background: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+}
+
+.font__item:hover,
+.font_size-item:hover {
+    background-color: rgba(206, 213, 219, 0.418);
+}
+
+.font_size-item:active,
+.font__item:active {
+    background-color: rgba(49, 132, 228, 0.185);
+}
+
+.font_size-item:focus,
+.font__item:focus,
+.btn {
+    outline: none;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="navigation__wrap">
+        <div class="checkbox__for-text">
+
+            <div class="checkbox__wrap">
+                <label class="container">
+            <input type="checkbox" value="bold" id="bold">
+            <span class="checkmark"><i class="fa fa-bold "></i></span>
+          </label>
+            </div>
+            <div class="checkbox__wrap">
+                <label class="container">
+            <input type="checkbox" value="italic" id="italic">
+            <span class="checkmark"><i class="fa fa-italic "></i></span>
+          </label>
+            </div>
+            <div class="checkbox__wrap">
+                <label class="container">
+            <input type="radio" onclick="clickRadio(this)" value="underline" id="underline" name="text-decor">
+            <span class="checkmark"><i class="fa fa-underline "></i></span>
+          </label>
+            </div>
+            <div class="checkbox__wrap">
+                <label class="container">
+            <input type="radio" onclick="clickRadio(this)" value="line-through" id="lineThrough"  name="text-decor" >
+            <span class="checkmark"><i class="fa fa-strikethrough "></i></span>
+          </label>
+            </div>
+        </div>
+        <!-- radios -->
+        <div class="radios__for-textpos">
+
+            <div class="radios__wrap">
+                <label class="container">
+    <input type="radio" name="position" value="left" id="posLeft">
+    <span class="checkmark"><i class="fa fa-align-left "></i></span>
+  </label>
+            </div>
+
+            <div class="radios__wrap">
+                <label class="container">
+              <input type="radio" name="position" value="center" id="posCenter">
+              <span class="checkmark"><i class="fa fa-align-center "></i></span>
+            </label>
+            </div>
+
+            <div class="radios__wrap">
+                <label class="container">
+                      <input type="radio" name="position" value="right" id="posRight">
+                      <span class="checkmark"><i class="fa fa-align-right"></i></span>
+                    </label>
+            </div>
+        </div>
+        <!-- dropdown    -->
+        <div class="dropdown">
+            <button class="btn " id="fontFamBtn"> <i class="fa fa-font  "></i> </button>
+            <button class="btn " id="fontSizeBtn"><i class="fa fa-text-height "></i> </button>
+            <div class="fonts hidden" id="fontFam">
+                <ul class="fonts__list">
+                    <li><button class="font__item" style="font-family:Arial, Helvetica, sans-serif" value="Arial">Arial</button> </li>
+                    <li><button class="font__item" style="font-family:Georgia, 'Times New Roman', Times, serif" value="Georgia">Georgia</button> </li>
+                    <li><button class="font__item" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif" value="Impact">Impact</button> </li>
+                    <li><button class="font__item" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" value="Tahoma">Tahoma</button> </li>
+                    <li><button class="font__item" style="font-family:'Times New Roman', Times, serif" value="Times New Roman">Times New Roman</button> </li>
+                    <li><button class="font__item" style="font-family:Verdana, Geneva, Tahoma, sans-serif" value="Verdana">Verdana</button> </li>
+
+                </ul>
+            </div>
+
+
+            <div class="sizes hidden" id="fontSyze">
+                <ul class="font__sizez">
+                    <li><button class="font_size-item" style="font-size: 12px;" value="12px">12px</button></li>
+                    <li><button class="font_size-item" style="font-size: 14px;" value="14px">14px</button></li>
+                    <li><button class="font_size-item" style="font-size: 16px;" value="16px">16px</button></li>
+                    <li><button class="font_size-item" style="font-size: 18px;" value="18px">18px</button></li>
+                    <li><button class="font_size-item" style="font-size: 20px;" value="20px">20px</button></li>
+                    <li><button class="font_size-item" style="font-size: 22px;" value="22px">22px</button></li>
+                    <li><button class="font_size-item" style="font-size: 25px;" value="25px">25px</button></li>
+                    <li><button class="font_size-item" style="font-size: 30px;" value="30px">30px</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="content" id="contentBlock">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, sed.</p>
+    </div>
+    <script src="./text-pos.js"></script>
+    <script src="./font-style.js"></script>
+    <script src="./dropdowns.js"></script>
+</body>
+
+</html>
